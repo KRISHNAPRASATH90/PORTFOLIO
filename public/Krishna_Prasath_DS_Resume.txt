@@ -1,0 +1,34 @@
+KRISHNA PRASATH DS
+CARRER OBJECTIVE
+EDUCATION
+SKILLS
+C, Python, Java
+HTML , CSS, JavaScript and Basics of ReactJs
+B.Tech - Computer Science and Business Systems [2022 - 2026]
+KIT-Kalaignarkarunanidhi Institute of Technology, Coimbatore
+7.7 CGPA
+ACHIEVEMENTS
+1.Infoys Springboard
+10th GRADE[2020]
+Velavan Mat.Hr.Sec. School
+75%
+HSC[2022]
+Velavan Mat.Hr.Sec. School
+80%
+Completed a 14days Internship at ETHER INFOTECH on ReactJS(2024) 
+Coimbatore,TamilNadu
+Online Car Rental - Frontend Vehicle Booking Platform using ReactJs
+Motivated final-year student with a basic understanding of programming and a strong desire to learn.
+Seeking opportunities to gain hands-on experience, enhance problem-solving skills, and contribute to
+meaningful, real-world projects in a collaborative environment.
+PROJECTS
+ShoeKart - Front end E-commerce website using ReactJs 
+SUMMER INTERNSHIP
+Python Foundation
+TechA Frontend Development Foundation Certification
+TechA Web Development Using HTML and CSS Foundation Certification
+2. Consistently Participating in weekly international contest platform such as codechef 
+DECLARATION
+I hereby declare that the above information given by me are true and correct to the best of my
+knowledge.
+Task Management - like Todo list using ReactJs
