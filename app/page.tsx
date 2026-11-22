@@ -30,11 +30,12 @@ export default function KrishnaPortfolio() {
   const [isVisible, setIsVisible] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const typewriterTexts = [
+    const typewriterTexts = [
     "Hello, I'm Krishna Prasath 👋",
-    "Final-Year CSBS Student | Web Developer | Problem Solver",
-    "Let's build something amazing together!",
+    "B.Tech CSBS Graduate | Aspiring Data Analyst",
+    "Transforming raw data into actionable business insights!",
   ]
+
 
   useEffect(() => {
     setIsVisible(true)
@@ -64,47 +65,73 @@ export default function KrishnaPortfolio() {
     }
   }, [currentTextIndex])
 
-  const projects = [
+    const projects = [
     {
-      title: "Car Rental System",
+      title: "Automated Financial Data Analysis and Reporting System",
       description:
-        "A responsive car rental frontend website built using React.js and Tailwind CSS. Users can explore chauffeur and self-driven options with transparent KM-based pricing. Images are for demo only.",
-      image: "/car-rental.png",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
-      liveUrl: "https://car-rental-using-react.vercel.app",
-      githubUrl: "https://github.com/KRISHNAPRASATH90/car-rental-using-react",
+        "Automated financial data pipeline extracting and cleaning data from 5 MySQL relational tables using Pandas. Analyzed monthly expenses, category spending, top 10 merchants, and budget vs. actuals, generating 4 scheduled Matplotlib PNG reports.",
+      image: "/financial-analysis.png",
+      technologies: ["Python", "MySQL", "Pandas", "Matplotlib", "Schedule"],
+      githubUrl: "https://github.com/KRISHNAPRASATH90/Automated-Financial-Data-Analysis",
     },
     {
-      title: "Task Tracker (To-Do List)",
+      title: "Netflix Movies & TV Shows Data Analysis",
       description:
-        "A clean React-based to-do list app with features to add, complete, and delete tasks. Built for productivity and demonstration of React component logic.",
-      image: "/task-tracker.png",
-      technologies: ["React.js", "JavaScript", "CSS", "HTML"],
-      liveUrl: "https://task-tracker-nu-gilt.vercel.app",
-      githubUrl: "https://github.com/KRISHNAPRASATH90/task-tracker",
+        "End-to-end exploratory data analysis (EDA) on 8,807 Netflix titles using Python and Pandas. Examined content distribution, top 10 countries, popular genres, and release trends, producing 6 Matplotlib charts and cleaned CSV/PNG exports.",
+      image: "/netflix-analysis.png",
+      technologies: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook", "Google Colab"],
+      githubUrl: "https://github.com/KRISHNAPRASATH90/Netflix-Data-Analysis",
+    },
+    {
+      title: "Global News & Event Intelligence Analytics",
+      description:
+        "API-driven news analytics pipeline integrating and deduplicating articles from Currents API using Python and Pandas. Analyzed publisher, category, and source distributions with 4 Matplotlib visualizations and cleaned CSV/JSON exports.",
+      image: "/news-analytics.png",
+      technologies: ["Python", "Currents API", "Requests", "Pandas", "NumPy", "Matplotlib"],
+      githubUrl: "https://github.com/KRISHNAPRASATH90/Global-News-and-Event-Intelligence-Analytics",
+    },
+    {
+      title: "Used Car Sales Analysis and Business Insights",
+      description:
+        "Analyzed 558,837 historical used-car auction records with USD-to-INR exchange rate integration. Conducted EDA across monthly sales, manufacturer performance, vehicle age, and pricing patterns, generating 7 Matplotlib charts for auction strategy.",
+      image: "/car-sales-analysis.png",
+      technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Google Colab"],
+      githubUrl: "https://github.com/KRISHNAPRASATH90/Used-Car-Sales-Analysis",
     },
   ]
 
-  const skills = [
+
+    const skills = [
     {
-      name: "Programming Languages",
+      name: "Programming & Databases",
       icon: Code,
-      technologies: ["C", "Python", "Java"],
+      technologies: ["Python", "SQL", "MySQL"],
+    },
+    {
+      name: "Data Analysis & Machine Learning",
+      icon: Trophy,
+      technologies: ["Data Analysis", "Machine Learning", "Pandas", "NumPy", "Matplotlib", "Excel", "Power BI"],
+    },
+    {
+      name: "Tools & Platforms",
+      icon: Briefcase,
+      technologies: ["GitHub", "VS Code", "Google Colab", "Jupyter Notebook"],
     },
     {
       name: "Web Development",
       icon: ExternalLink,
-      technologies: ["HTML", "CSS", "JavaScript", "React.js","sql"],
+      technologies: ["HTML", "CSS", "JavaScript"],
     },
   ]
 
-  const education = [
+
+    const education = [
     {
       degree: "B.Tech - Computer Science and Business Systems",
       institution: "KIT-Kalaignarkarunanidhi Institute of Technology, Coimbatore",
       period: "2022 - 2026",
-      cgpa: "7.7 CGPA",
-      status: "Final Year",
+      cgpa: "7.8 CGPA",
+      status: "Graduated",
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
@@ -120,13 +147,16 @@ export default function KrishnaPortfolio() {
     },
   ]
 
+
   const achievements = [
-    "Infosys Springboard - Python Foundation Certification",
-    "Infosys Springboard - TechA Frontend Development Foundation Certification",
-    "Infosys Springboard - TechA Web Development Using HTML and CSS Foundation Certification",
-    "Consistently Participating in weekly international contest platform such as CodeChef",
-    "Completed a 14-day Internship at ETHER INFOTECH on ReactJS (2024), Coimbatore, Tamil Nadu",
+    "Data Analyst Certification - Pumo Technovations (2026)",
+    "Data Engineering Professional Certification - Altair RapidMiner (2024)",
+    "Introduction to Data Analytics for Business - University of Colorado Boulder, Coursera (2024)",
+    "Using SQL String Functions to Clean Data - Coursera Project Network (2024)",
+    "Python Foundation Certification - Infosys Springboard (2023)",
+    "Completed a 14-day Internship at Ether InfoTech on React.js (2024), Coimbatore, Tamil Nadu",
   ]
+
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId)
@@ -136,13 +166,15 @@ export default function KrishnaPortfolio() {
   }
 
   const downloadResume = () => {
-    // Convert Google Drive view link to direct download link
-    const driveFileId = "1wi34OMsx5IYqkeiKjc6_QFCUQqHYDpO6"
+    window.open("https://drive.google.com/uc?export=download&id=1iBUsOHsjQyMUHlcE2wJAUf4wF7XhQtR5", "_blank")
+
+    const driveFileId = "1iBUsOHsjQyMUHlcE2wJAUf4wF7XhQtR5"
     const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${driveFileId}`
 
     // Open the direct download link
     window.open(directDownloadUrl, "_blank")
   }
+
 
   return (
     <div
@@ -284,7 +316,7 @@ export default function KrishnaPortfolio() {
 
                 <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600 mb-6 lg:mb-8 text-sm sm:text-base">
                   <MapPin className="w-4 h-4 flex-shrink-0" />
-                  <span>Coimbatore, Tamil Nadu, India</span>
+                  <span>Tiruppur, Tamil Nadu, India</span>
                 </div>
 
                 <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 mb-6 lg:mb-8">
@@ -331,15 +363,6 @@ export default function KrishnaPortfolio() {
                     <Linkedin className="w-4 h-4" />
                     LinkedIn
                   </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="gap-2 text-violet-600 hover:bg-violet-50 text-xs sm:text-sm"
-                    onClick={() => window.open("https://www.codechef.com/users/krishna28prasa", "_blank")}
-                  >
-                    <Code className="w-4 h-4" />
-                    CodeChef
-                  </Button>
                 </div>
               </div>
 
@@ -357,7 +380,7 @@ export default function KrishnaPortfolio() {
           </div>
         </section>
 
-        {/* About Section */}
+              {/* About Section */}
         <section id="about" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
@@ -370,12 +393,12 @@ export default function KrishnaPortfolio() {
                 <div className="flex items-start gap-3 sm:gap-4">
                   <User className="w-5 h-5 sm:w-6 sm:h-6 text-violet-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Final-Year B.Tech Student</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">B.Tech CSBS Graduate</h3>
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                      I'm a final-year B.Tech student (2022–2026) specializing in Computer Science and Business Systems
-                      at KIT-Kalaignarkarunanidhi Institute of Technology, Coimbatore with a CGPA of 7.7. I have a
-                      strong passion for web development and programming, with expertise in multiple programming
-                      languages including C, Python, and Java.
+                      I'm a B.Tech graduate (2022–2026) specializing in Computer Science and Business Systems from
+                      KIT-Kalaignarkarunanidhi Institute of Technology, Coimbatore with a CGPA of 7.8. I am seeking an
+                      entry-level Data Analyst role, bringing strong analytical thinking and hands-on experience in
+                      Python, SQL, MySQL, and Power BI.
                     </p>
                   </div>
                 </div>
@@ -384,12 +407,13 @@ export default function KrishnaPortfolio() {
                   <Code className="w-5 h-5 sm:w-6 sm:h-6 text-violet-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
-                      Web Developer & Problem Solver
+                      Aspiring Data Analyst
                     </h3>
                     <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                      I specialize in frontend technologies including HTML, CSS, JavaScript, and React.js. I'm actively
-                      learning and contributing to the developer community through platforms like CodeChef, constantly
-                      improving my problem-solving skills and staying updated with the latest technologies.
+                      I specialize in data cleaning, exploratory data analysis (EDA), data visualization, ETL, data
+                      warehousing, and foundational Machine Learning concepts using Pandas, NumPy, Matplotlib, and Power
+                      BI. I have built end-to-end analytics projects across financial, e-commerce, entertainment, and
+                      news datasets to transform raw data into actionable business insights.
                     </p>
                   </div>
                 </div>
@@ -408,11 +432,11 @@ export default function KrishnaPortfolio() {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-violet-600 flex-shrink-0" />
-                      <span className="text-sm sm:text-base text-gray-700">Coimbatore, Tamil Nadu</span>
+                      <span className="text-sm sm:text-base text-gray-700">Tiruppur, Tamil Nadu</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <GraduationCap className="w-4 h-4 text-violet-600 flex-shrink-0" />
-                      <span className="text-sm sm:text-base text-gray-700">Final Year Student</span>
+                      <span className="text-sm sm:text-base text-gray-700">B.Tech CSBS Graduate</span>
                     </div>
                   </div>
                 </div>
@@ -420,6 +444,7 @@ export default function KrishnaPortfolio() {
             </Card>
           </div>
         </section>
+
 
         {/* Skills Section */}
         <section id="skills" className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
@@ -495,16 +520,17 @@ export default function KrishnaPortfolio() {
                         </Badge>
                       ))}
                     </div>
-                    <div className="flex">
+                                        <div className="flex">
                       <Button
                         size="sm"
                         className="w-full gap-2 bg-violet-600 hover:bg-violet-700 text-xs sm:text-sm"
-                        onClick={() => window.open(project.liveUrl, "_blank")}
+                        onClick={() => window.open(project.githubUrl, "_blank")}
                       >
-                        <ExternalLink className="w-3 h-3" />
-                        Live Demo
+                        <Github className="w-3 h-3" />
+                        GitHub Repo
                       </Button>
                     </div>
+
                   </CardContent>
                 </Card>
               ))}
@@ -626,27 +652,18 @@ export default function KrishnaPortfolio() {
                 <Linkedin className="w-4 h-4" />
                 LinkedIn Profile
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="gap-2 border-violet-600 text-violet-600 hover:bg-violet-50 w-full sm:w-auto text-sm bg-transparent"
-                onClick={() => window.open("https://www.codechef.com/users/krishna28prasa", "_blank")}
-              >
-                <Code className="w-4 h-4" />
-                CodeChef Profile
-              </Button>
             </div>
           </div>
         </section>
 
-        {/* Footer */}
+                {/* Footer */}
         <footer className="bg-gray-900 text-white py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6">
               <div>
                 <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Krishna Prasath DS</h3>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  Final-Year B.Tech Student | Web Developer | Problem Solver
+                  B.Tech CSBS Graduate | Aspiring Data Analyst
                 </p>
               </div>
 
@@ -677,7 +694,7 @@ export default function KrishnaPortfolio() {
               <div className="sm:col-span-2 lg:col-span-1">
                 <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contact Info</h3>
                 <div className="space-y-2 text-gray-400 text-sm sm:text-base">
-                  <p>Coimbatore, Tamil Nadu, India</p>
+                  <p>Tiruppur, Tamil Nadu, India</p>
                   <p className="break-all">krishnaprasath810@gmail.com</p>
                   <p>+91 8248104043</p>
                 </div>
@@ -686,7 +703,7 @@ export default function KrishnaPortfolio() {
 
             <div className="border-t border-gray-800 pt-4 sm:pt-6 text-center">
               <p className="text-gray-400 text-xs sm:text-sm">
-                © 2024 Krishna Prasath DS. Built with Next.js and Tailwind CSS.
+                © 2026 Krishna Prasath DS. Built with Next.js and Tailwind CSS.
               </p>
             </div>
           </div>
